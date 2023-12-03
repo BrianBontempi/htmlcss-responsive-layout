@@ -1,5 +1,22 @@
+/* ! reset css */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* font */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* generics */
+
+h1{
+    font-family: 'Nerko One', cursive;
+    color: orange;
+    text-shadow: 1px 1px 1px grey;
+    font-size: 3.5rem;
+    text-align: center;
 }
