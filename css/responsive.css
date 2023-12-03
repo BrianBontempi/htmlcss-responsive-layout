@@ -1,0 +1,50 @@
+/* ! **** tablet up to 768px */
+#adds{
+    min-width: 100%;
+    height: auto;
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        padding: 45px;
+    }
+
+    header{
+        display: inline-block;
+        padding-left: 20px;
+    }
+
+    iframe{
+        height: 400px;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .btn{
+        padding: 10px 50px;
+    }
+
+    #adds{
+        display: inline-block;
+    }
+
+    picture{
+        display: block;
+        width: 50%;
+        float: left;
+        margin-right: 10px;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+    
+
+} 
+
+/* ! **** desktop up to 992px ***** */
