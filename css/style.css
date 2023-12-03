@@ -10,11 +10,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-:root{
-    --1r: 1rem;
-    --2r: 2rem;
-    --3r: 3rem;
-}
 
 /* ! colors */
 
@@ -45,7 +40,7 @@ button{
 
 h1{
     font-family: 'Nerko One', cursive;
-    color: orange;
+    color: var(--org);
     text-shadow: 1px 1px 1px grey;
     font-size: 3.5rem;
     text-align: center;
@@ -60,6 +55,11 @@ i{
     color: var(--org);
 }
 
+iframe{
+    width: 100%;
+    height: 300px;
+}
+
 /******** utils ********/
 
 .grey-text{
@@ -68,10 +68,49 @@ i{
 }
 
 
-
+/* ***** title section ****** */
 
 #title{
     display: flex;
     justify-content: space-between;
     align-items: end;
+}
+
+/* ******* video section ******* */
+
+#video{
+    background-color: white;
+}
+
+.info{
+    background-color: #f4f4f4;
+    margin: 25px;
+    padding: 20px;
+}
+
+.row-top{
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(171, 167, 167, 0.527);
+}
+
+.more{
+    color: var(--org);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.calories{
+    background-color: #9c6fb1;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.fa-carrot{
+    color: black;
+    margin-right: 5px;
+
 }
