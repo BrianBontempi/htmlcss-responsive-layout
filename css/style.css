@@ -5,13 +5,43 @@
     padding: 0;
 }
 
-/* font */
+/* ?font */
 
 body{
     font-family: 'Montserrat', sans-serif;
 }
+:root{
+    --1r: 1rem;
+    --2r: 2rem;
+    --3r: 3rem;
+}
 
-/* generics */
+/* ! colors */
+
+:root{
+    --org: orange;
+    --pur: #6a3e7d;
+}
+
+/******** generics *******/
+
+.container{
+    background-color: #f4f4f4;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button{
+    background-color: orange;
+    border: none;
+    color: white;
+
+    font-size: var(--1r);
+
+    padding: 10px 15px;
+    border-radius: 20px;
+}
 
 h1{
     font-family: 'Nerko One', cursive;
@@ -19,4 +49,29 @@ h1{
     text-shadow: 1px 1px 1px grey;
     font-size: 3.5rem;
     text-align: center;
+}
+
+h2{
+    font-size: 1.7rem;
+    color: var(--pur);
+}
+
+i{
+    color: var(--org);
+}
+
+/******** utils ********/
+
+.grey-text{
+    color: rgba(101, 99, 99, 0.472);
+    font-size: 1.2rem;
+}
+
+
+
+
+#title{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
