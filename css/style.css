@@ -180,6 +180,28 @@ picture{
     overflow: hidden;
 }
 img{
-    max-width: 350px;
+    max-width: 100%;
     height: auto;
+}
+
+/* ***** title ***** */
+
+.tradition{
+    display: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: grey;
+}
+
+/* ***** socials ***** */
+
+#socials .btn{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.social-name{
+    display: none;
+    margin-left: 8px;
 }

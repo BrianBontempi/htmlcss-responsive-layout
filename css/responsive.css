@@ -1,3 +1,13 @@
+/* ! **** bonus: anche su mobile, se c'e' spazio, il testo circonda l'immagine **** */
+@media screen and (min-width: 480px){
+    picture{
+        display: block;
+        width: 50%;
+        float: left;
+        margin-right: 20px;
+    }
+}
+
 /* ! **** tablet up to 768px */
 #adds{
     min-width: 100%;
@@ -15,14 +25,22 @@
         padding-left: 20px;
     }
 
+    h2{
+        font-size: 2.3rem;
+    }
+
+    .tradition{
+        display: inline;
+    }
+
     iframe{
         height: 400px;
     }
 
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+    #video ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
 
     .btn{
@@ -34,31 +52,45 @@
     }
 
     picture{
-        display: block;
-        width: 50%;
-        float: left;
-        margin-right: 10px;
+        width: 40%;
     }
 
     p{
         font-size: 1rem;
     }
-    
-
 } 
 
 /* ! **** desktop up to 992px ***** */
 
 @media screen and (min-width: 992px){
+    h2{
+        font-size: 3rem;
+    }
+
     #video{
         display: flex;
-        flex-wrap: wrap;
+        align-items: flex-start;
     }
+
     iframe{
-        max-width: 70%;
+        flex-basis: 65%;
+        height: 450px;
     }
-    .info{
-        max-height: 120px;
-        width: 20%;
+
+    .recipe-info{
+        flex-basis: 35%;
+    }
+
+    #video ul{
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .btn{
+        padding: 10px 20px;
+    }
+
+    .social-name{
+        display: inline;
     }
 }
