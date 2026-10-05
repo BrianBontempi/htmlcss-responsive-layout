@@ -93,4 +93,15 @@
     .social-name{
         display: inline;
     }
+
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-nav{
+        margin-top: 0;
+    }
 }
